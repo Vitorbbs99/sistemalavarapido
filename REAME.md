@@ -1,0 +1,39 @@
+# Sistema de Lava-Rápido (Java + PostgreSQL)
+
+Projeto para gerenciamento de veículos para um lava-rápido. O sistema funciona via console e permite:
+
+## 📌 Funcionalidades
+
+* Login de usuário (com validação no PostgreSQL)
+* Cadastro de veículos
+* Listagem de veículos cadastrados
+* Edição de veículos existentes
+* Exclusão de veículos
+* Menu interativo via terminal
+
+## 🧱 Estrutura do Projeto
+
+O sistema segue uma arquitetura simples usando separação por camadas:
+
+* **model/** → Contém as classes de modelo (ex.: `Veiculo`, `Usuario`)
+* **dao/** → Contém as classes responsáveis pelo acesso ao banco (DAO)
+* **view/** → Telas e menus do sistema (cadastro, listagem, edição etc.)
+* **database/** → Classe de conexão com o PostgreSQL (`ConexaoBanco`)
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Java 21+**
+* **PostgreSQL**
+* **Driver JDBC PostgreSQL**
+* **Scanner (entrada de dados via console)**
+
+## ▶️ Como Rodar o Projeto
+
+1. Instale o PostgreSQL e configure um banco.
+2. Ajuste a classe `ConexaoBanco` com suas credenciais.
+3. Certifique-se de ter o driver JDBC do PostgreSQL no classpath.
+
+## 📌 Observações
+
+* O projeto está em desenvolvimento.
+* Todo o sistema funciona via terminal.

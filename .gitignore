@@ -1,0 +1,22 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+.idea/
+
+# Arquivos de workspace e build
+*.iml
+*.iws
+*.ipr
+vcs.xml
+
+# JARs e WARs finais
+*.jar
+*.war
+*.ear
+
+### Mac OS ###
+.DS_Store
+
+.env
