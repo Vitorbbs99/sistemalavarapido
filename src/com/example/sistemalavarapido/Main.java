@@ -1,27 +1,23 @@
 package com.example.sistemalavarapido;
 
-import com.example.sistemalavarapido.dao.UsuarioDAO;
-import com.example.sistemalavarapido.view.MenuView;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-import java.util.Scanner;
+public class Main extends Application {
 
-public class Main {
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/fxml/login.fxml"));
+        Scene scene = new Scene(loader.load());
+        scene.getStylesheets().add(getClass().getResource("/resources/css/styles.css").toExternalForm());
+        stage.setScene(scene);
+        stage.setTitle("Sistema Lava-Rápido");
+        stage.show();
+    }
+
     public static void main(String[] args) {
-        UsuarioDAO dao = new UsuarioDAO();
-        /*Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Digite seu e-mail: ");
-        String email = scanner.nextLine();
-
-        System.out.println("Digite sua senha: ");
-        String senha = scanner.nextLine();*/
-
-        if (dao.autenticar("teste@teste.com", "123")) {
-            System.out.println("Login bem-sucedido!");
-            MenuView menu = new MenuView();
-            menu.exibirMenu();
-        } else {
-            System.out.println("Email ou senha incorretos");
-        }
+        launch();
     }
 }

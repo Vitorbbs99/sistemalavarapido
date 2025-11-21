@@ -15,8 +15,10 @@ vcs.xml
 *.jar
 *.war
 *.ear
+libs/
 
 ### Mac OS ###
 .DS_Store
 
 .env
+capa.png

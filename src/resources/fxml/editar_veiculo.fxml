@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="10" alignment="TOP_LEFT" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.sistemalavarapido.view.EditarVeiculoController">
+
+    <padding>
+        <Insets top="20" left="20" right="20" bottom="20"/>
+    </padding>
+
+    <Label text="Editar Veículo" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <Label text="Modelo:"/>
+    <TextField fx:id="txtModelo"/>
+
+    <Label text="Placa:"/>
+    <TextField fx:id="txtPlaca"/>
+
+    <Button text="Salvar Alterações" onAction="#salvarAlteracoes"
+            style="-fx-background-color: #0066ff; -fx-text-fill: white;"/>
+
+    <Label fx:id="lblStatus" style="-fx-font-size: 14px; -fx-text-fill: green;"/>
+
+</VBox>

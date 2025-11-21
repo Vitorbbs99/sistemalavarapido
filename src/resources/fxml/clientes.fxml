@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemalavarapido.view.ClientesController">
+
+    <!-- MENU SUPERIOR -->
+    <top>
+        <MenuBar styleClass="menu-bar">
+            <Menu text="Veículos">
+                <MenuItem onAction="#home" text="Listar Veículos" />
+                <MenuItem onAction="#abrirCadastroVeiculo" text="Cadastrar Veículo" />
+            </Menu>
+
+            <Menu text="Clientes">
+                <MenuItem onAction="#abrirCadastroCliente" text="Cadastrar Cliente" />
+            </Menu>
+
+            <Menu text="Sistema">
+                <MenuItem onAction="#sair" text="Sair" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- TABELA DE VEÍCULOS -->
+    <center>
+        <TableView fx:id="tabelaClientes" prefHeight="600.0" prefWidth="750.0">
+
+            <columns>
+
+                <TableColumn fx:id="colId" prefWidth="50" text="ID" />
+                <TableColumn fx:id="colNome" prefWidth="150" text="Nome" />
+                <TableColumn fx:id="colTelefone" prefWidth="120" text="Telefone" />
+                <TableColumn fx:id="colEndereco" prefWidth="120" text="Endereço" />
+                <TableColumn fx:id="colEditar" text="Editar" prefWidth="80"/>
+                <TableColumn fx:id="colDeletar" text="Deletar" prefWidth="80"/>
+
+            </columns>
+
+        </TableView>
+    </center>
+
+</BorderPane>
