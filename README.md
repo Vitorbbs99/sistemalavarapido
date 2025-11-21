@@ -1,6 +1,6 @@
 # Sistema de Lava-Rápido (Java + PostgreSQL)
 
-Projeto para gerenciamento de veículos para um lava-rápido. O sistema funciona via JavaFX e permite:
+Projeto para gerenciamento de veículos para um lava-rápido. O sistema funciona via JavaFX.
 
 ![Painel do Sistema](./capa.png)
 
