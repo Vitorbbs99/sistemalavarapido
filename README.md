@@ -4,7 +4,7 @@ Projeto para gerenciamento de veículos para um lava-rápido. O sistema funciona
 
 ![Painel do Sistema](./capa.png)
 
-## 📌 Funcionalidades
+## Funcionalidades
 
 * Login de usuário (com validação no PostgreSQL)
 * Cadastro de veículos
@@ -13,7 +13,7 @@ Projeto para gerenciamento de veículos para um lava-rápido. O sistema funciona
 * Exclusão de veículos
 * Cadastro de clientes
 
-## 🧱 Estrutura do Projeto
+## Estrutura do Projeto
 
 O sistema segue uma arquitetura simples usando separação por camadas:
 
@@ -22,7 +22,7 @@ O sistema segue uma arquitetura simples usando separação por camadas:
 * **view/** → Telas e menus do sistema (cadastro, listagem, edição etc.)
 * **database/** → Classe de conexão com o PostgreSQL (`ConexaoBanco`)
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Java 21+**
 * **JavaFX 21**
@@ -32,13 +32,13 @@ O sistema segue uma arquitetura simples usando separação por camadas:
 * **PostgreSQL**
 * **Driver JDBC PostgreSQL**
 
-## ▶️ Como Rodar o Projeto
+## Como Rodar o Projeto
 
 1. Instale o PostgreSQL e configure um banco.
 2. Ajuste a classe `ConexaoBanco` com suas credenciais.
 3. Certifique-se de ter o driver JDBC do PostgreSQL no classpath.
 4. Crie uma pasta "libs" e insira os JAR.
 
-## 📌 Observações
+## Observações
 
 * O projeto está em desenvolvimento.
